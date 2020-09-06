@@ -22,12 +22,13 @@
     padding: 15px 2px 0;
     border: 3px solid transparent;
     transition: transform 1s;
-  }
 
-  &__img:hover {
-    border: 3px solid #f3f3f3;
-    border-radius: 5px;
-    transform: scale(1.2);
+
+    &:hover {
+      border: 3px solid #f3f3f3;
+      border-radius: 5px;
+      transform: scale(1.2);
+    }
   }
 
   &__title {
