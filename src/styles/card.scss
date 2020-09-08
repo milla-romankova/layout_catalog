@@ -7,8 +7,7 @@
 
   @include fontNormal;
 
-  background: #fff;
-  border: 1px solid #f3f3f3;
+  border: 1px solid $border-color;
   border-radius: 5px;
 
   &:hover {
@@ -24,7 +23,7 @@
     transition: transform 1s;
 
     &:hover {
-      border: 3px solid #f3f3f3;
+      border: $border-color;
       border-radius: 5px;
       transform: scale(1.2);
     }
@@ -64,7 +63,7 @@
     width: 170px;
     height: 40px;
 
-    color: white;
+    color: $button-text-color;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
