@@ -1,9 +1,7 @@
 .card {
   width: $card-width;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 12px 15px 15px;
+  padding: 12px 14px 15px;
 
   @include fontNormal;
 
@@ -17,13 +15,13 @@
   &__img {
     height: 155px;
     width: 170px;
-    margin-bottom: 42px;
+    margin-bottom: 39px;
     padding: 15px 2px 0;
     border: 3px solid transparent;
     transition: transform 1s;
 
     &:hover {
-      border: $border-color;
+      border: solid $border-color;
       border-radius: 5px;
       transform: scale(1.2);
     }
@@ -47,10 +45,13 @@
   }
 
   &__price {
-    @extend .card__rates;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
   }
 
-  .card__price-value {
+  &__price-value {
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
@@ -59,8 +60,8 @@
   &__button-link {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 170px;
+    line-height: 40px;
+    width: 100%;
     height: 40px;
 
     color: $button-text-color;
